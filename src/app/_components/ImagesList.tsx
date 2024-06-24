@@ -7,7 +7,7 @@ export default async function ImagesList() {
 
   return (
     <div className="flex flex-wrap gap-4">
-      {[...images, ...images, ...images].map((image) => (
+      {images.map((image) => (
         <div key={image.id} className="flex w-48 flex-col">
           <img src={image.url} alt={image.name} />
           <div>{image.name}</div>
